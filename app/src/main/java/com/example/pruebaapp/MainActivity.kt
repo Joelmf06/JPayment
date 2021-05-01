@@ -2,6 +2,7 @@ package com.example.pruebaapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract
 import com.example.pruebaapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -10,9 +11,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.etVerifiyEmail.setOnClickListener {}
+        //binding.etVerifyEmail.setOnClickListener {}
 
     }
 
-    val
 }
