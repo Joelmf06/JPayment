@@ -3,6 +3,7 @@ package com.example.pruebaapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.ContactsContract
+import android.widget.Toast
 import com.example.pruebaapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -12,7 +13,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         //binding.etVerifyEmail.setOnClickListener {}
+        click_BotonMenu ()
 
+    }
+
+    fun click_BotonMenu () {
+        binding.btnLogin.setOnClickListener (){
+            Toast.makeText(applicationContext, "Campos obligatorios", Toast.LENGTH_SHORT).show()
+        }
     }
 
 }
