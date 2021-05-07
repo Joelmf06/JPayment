@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#ffffff"
-    tools:context=".MainActivity">
+    android:fillViewport="true"
+    >
 
-    <TextView
-        android:id="@+id/tvText1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="30dp"
-        android:text="Registro"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
 
     <EditText
         android:id="@+id/etEmailAddress"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/esquinas_redondas"
         android:ems="10"
-        android:gravity="center"
-        android:hint="@string/ingrese_su_email_aqui"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
+        android:hint="E-mail Address"
         android:inputType="textEmailAddress"
+        android:textColorHint="#000000"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvText2" />
 
@@ -42,60 +42,80 @@
         android:layout_marginEnd="35dp"
         android:background="@drawable/esquinas_redondas"
         android:ems="10"
-        android:gravity="center"
+        android:gravity="left|center"
+        android:paddingLeft="10dp"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColorHint="#000000"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmailAddress" />
 
+
+    <EditText
+        android:id="@+id/etConfirmationPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/esquinas_redondas"
+        android:hint="Confimar Password"
+        android:textColorHint="#000000"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+
     <Button
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnRegistro"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/esquinas_redondas"
         android:backgroundTint="#3F51B5"
-        android:text="Ingresar"
+        android:text="Registrarme"
         android:textAllCaps="false"
+        android:textColor="#ffffff"
         android:textSize="23dp"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/etConfirmationPassword" />
 
     <TextView
         android:id="@+id/tvText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Login"
+        android:layout_marginTop="16dp"
+        android:text="Registro "
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
-
-    <Switch
-        android:id="@+id/sRecuerdame"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="50dp"
-        android:switchPadding="10dp"
-        android:text="Recuerdame"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
     <ImageView
         android:id="@+id/ivLogo"
         android:layout_width="125dp"
         android:layout_height="125dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="42dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvText1"
-        app:srcCompat="@drawable/logo1" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="80dp"
+        android:text="¿Ya estas registrado (a)?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
