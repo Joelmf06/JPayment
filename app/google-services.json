@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "578657356007",
+    "project_id": "jpayment-58a74",
+    "storage_bucket": "jpayment-58a74.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:578657356007:android:572a4062b3fe491b727a42",
+        "android_client_info": {
+          "package_name": "com.joelmf06.Jpayment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "578657356007-vt7qmeb6kusu0e1kilv3bfq5h0hjb8o7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqLqEO1jozFhGrOHg9SAssLbsMLd0sv4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "578657356007-vt7qmeb6kusu0e1kilv3bfq5h0hjb8o7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
