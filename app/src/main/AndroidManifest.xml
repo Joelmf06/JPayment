@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pruebaapp">
+    package="com.joelmf06.Jpayment">
 
     <application
         android:allowBackup="true"
@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pruebaapp">
-        <activity android:name=".HomePage"></activity>
-        <activity android:name=".InicioSesion" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.joelmf06.Jpayment.HomePage"></activity>
+        <activity android:name="com.joelmf06.Jpayment.InicioSesion" />
+        <activity android:name="com.joelmf06.Jpayment.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

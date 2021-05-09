@@ -1,8 +1,8 @@
-package com.example.pruebaapp
+package com.joelmf06.Jpayment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.pruebaapp.databinding.ActivityHomePageBinding
+import com.joelmf06.Jpayment.databinding.ActivityHomePageBinding
 
 class HomePage : AppCompatActivity() {
     private lateinit var binding: ActivityHomePageBinding

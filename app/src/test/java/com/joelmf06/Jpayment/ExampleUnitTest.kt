@@ -1,4 +1,4 @@
-package com.example.pruebaapp
+package com.joelmf06.Jpayment
 
 import org.junit.Test
 
