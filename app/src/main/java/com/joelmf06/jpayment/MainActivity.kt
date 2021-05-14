@@ -1,13 +1,12 @@
-package com.joelmf06.Jpayment
+package com.joelmf06.jpayment
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
-import com.google.firebase.auth.ActionCodeEmailInfo
 import com.google.firebase.auth.FirebaseAuth
-import com.joelmf06.Jpayment.databinding.ActivityMainBinding
-import org.w3c.dom.Text
+import com.joelmf06.jpayment.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,7 +31,7 @@ class MainActivity : AppCompatActivity() {
                      binding.etPassword.text.toString()).addOnCompleteListener {
 
                          if (it.isSuccessful) {
-                             showLogin(it.result?.user?.email ?: "")
+                             showLogin(it.result?.user?.email?: "")
                          }else {
                              showAlert()
                          }
@@ -46,18 +45,17 @@ class MainActivity : AppCompatActivity() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
         builder.setMessage("Se ha producido un error autenticando al usuario")
-        builder.setPositiveButton( text: "Aceptar", listener:null)
+        builder.setPositiveButton("Aceptar", null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }
 
-    private fun showLogin (email: String, password: String) {
+    private fun showLogin (email: String) {
 
-            val LoginIntent: Intent = Intent (this, InicioSesion::class.java).apply { this
+            val loginIntent: Intent = Intent (this, InicioSesion::class.java).apply {
             putExtra("email", email)
-            putExtra("password", password)
             }
-            startActivity(LoginIntent)
+            startActivity(loginIntent)
 
     }
 

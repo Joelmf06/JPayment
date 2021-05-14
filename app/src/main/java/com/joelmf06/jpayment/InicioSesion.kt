@@ -1,11 +1,12 @@
-package com.joelmf06.Jpayment
+package com.joelmf06.jpayment
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.joelmf06.Jpayment.databinding.ActivityInicioSesionBinding
+import com.joelmf06.jpayment.databinding.ActivityInicioSesionBinding
+
 
 class InicioSesion : AppCompatActivity() {
 
@@ -16,10 +17,12 @@ class InicioSesion : AppCompatActivity() {
         binding= ActivityInicioSesionBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setup ()
+        val bundle:Bundle? = intent.extras
+        val email:String? = bundle?.getString("email")
+        setup(email?: "")
 
     }
-    private fun setup () {
+    private fun setup (email: String) {
         title = "Inicio Sesión"
 
         binding.btnLogin.setOnClickListener {
@@ -30,7 +33,7 @@ class InicioSesion : AppCompatActivity() {
                         binding.etLoginPassword.text.toString()).addOnCompleteListener {
 
                         if (it.isSuccessful) {
-                            showLogin(it.result?.user?.email?: "")
+                            showLogin()
                         }else {
                             showAlert()
                         }
@@ -40,22 +43,20 @@ class InicioSesion : AppCompatActivity() {
         }
 
     }
+
     private fun showAlert() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
         builder.setMessage("Se ha producido un error autenticando al usuario")
-        builder.setPositiveButton(text: "Aceptar", listener:null)
+        builder.setPositiveButton("Aceptar", null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }
 
-    private fun showLogin (email: String, password: String) {
+    private fun showLogin () {
 
-        val LoginIntent: Intent = Intent (this, HomePage::class.java).apply { this
-            putExtra("email", email)
-            putExtra("password", password)
-        }
-        startActivity(LoginIntent)
+        val loginIntent = Intent (this, HomePage::class.java)
+        startActivity(loginIntent)
 
     }
 

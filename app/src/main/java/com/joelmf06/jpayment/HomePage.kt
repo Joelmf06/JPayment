@@ -1,8 +1,9 @@
-package com.joelmf06.Jpayment
+package com.joelmf06.jpayment
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.joelmf06.Jpayment.databinding.ActivityHomePageBinding
+import com.joelmf06.jpayment.databinding.ActivityHomePageBinding
+
 
 class HomePage : AppCompatActivity() {
 

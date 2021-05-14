@@ -23,12 +23,13 @@
         android:layout_marginTop="28dp"
         android:layout_marginEnd="35dp"
         android:background="@drawable/esquinas_redondas"
-        android:ems="10"
+        android:ems="20"
         android:gravity="left|center"
         android:hint="E-mail Address"
         android:inputType="textEmailAddress"
-        android:paddingLeft="10dp"
-        android:textColorHint="#000000"
+        android:paddingLeft="15dp"
+        android:textColor="#000000"
+        android:textColorHint="#B4616161"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -45,10 +46,11 @@
         android:background="@drawable/esquinas_redondas"
         android:ems="10"
         android:gravity="left|center"
+        android:textColor="@color/black"
         android:hint="Password"
         android:inputType="textPassword"
-        android:paddingLeft="10dp"
-        android:textColorHint="#000000"
+        android:paddingLeft="15dp"
+        android:textColorHint="#B4616161"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,8 +102,22 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="80dp"
         android:textSize="19dp"
+        android:textColor="@color/black"
         android:text="¿Ya estas registrado (a)?"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="80dp"
+        android:text="Click aqui"
+        android:textSize="20sp"
+        android:textColor="#090909"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

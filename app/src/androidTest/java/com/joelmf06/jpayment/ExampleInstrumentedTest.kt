@@ -1,4 +1,4 @@
-package com.joelmf06.Jpayment
+package com.joelmf06.jpayment
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

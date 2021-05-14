@@ -1,4 +1,4 @@
-package com.joelmf06.Jpayment
+package com.joelmf06.jpayment
 
 import org.junit.Test
 
