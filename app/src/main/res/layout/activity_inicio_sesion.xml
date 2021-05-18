@@ -26,6 +26,7 @@
         android:layout_marginEnd="35dp"
         android:background="@drawable/esquinas_redondas"
         android:ems="10"
+        android:textColor="#000000"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -42,6 +43,7 @@
         android:background="@drawable/esquinas_redondas"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etLoginAddress" />
@@ -53,6 +55,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginEnd="15dp"
         android:text="Recuerdame"
+        android:textColor="#818181"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
 
@@ -85,7 +88,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="130dp"
-        android:textSize="15dp"
+        android:textSize="16dp"
+        android:textColor="#818181"
         android:text="¿No recuerdas el usuario o contraseña?"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnLogin" />

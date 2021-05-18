@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         //Setup
         setup ()
+        click_TvClickAqui ()
 
     }
      private fun setup () {
@@ -52,11 +53,20 @@ class MainActivity : AppCompatActivity() {
 
     private fun showLogin (email: String) {
 
-            val loginIntent: Intent = Intent (this, InicioSesion::class.java).apply {
+        val loginIntent: Intent = Intent (this, InicioSesion::class.java).apply {
             putExtra("email", email)
             }
             startActivity(loginIntent)
 
+    }
+
+    private fun click_TvClickAqui () {
+        binding.tvClickAqui.setOnClickListener {
+
+            val clickIntent = Intent (this, InicioSesion::class.java)
+            startActivity(clickIntent)
+
+        }
     }
 
 

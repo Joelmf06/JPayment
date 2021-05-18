@@ -60,7 +60,7 @@
     <Button
         android:id="@+id/btnRegistro"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        android:layout_height="55dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/esquinas_redondas"
         android:backgroundTint="#3F51B5"
@@ -80,6 +80,7 @@
         android:layout_marginTop="16dp"
         android:text="Registro "
         android:textSize="25sp"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
@@ -101,21 +102,21 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:layout_marginTop="80dp"
-        android:textSize="19dp"
-        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textColor="#818181"
         android:text="¿Ya estas registrado (a)?"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvClickAqui"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="80dp"
         android:text="Click aqui"
         android:textSize="20sp"
-        android:textColor="#090909"
+        android:textColor="#03A9F4"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
 
