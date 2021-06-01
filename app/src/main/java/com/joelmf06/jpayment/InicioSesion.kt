@@ -24,6 +24,7 @@ class InicioSesion : AppCompatActivity() {
     }
     private fun setup (email: String) {
         title = "Inicio Sesión"
+        binding.etLoginAddress.text = email
 
         binding.btnLogin.setOnClickListener {
             if (binding.etLoginAddress.text.isNotEmpty() && binding.etLoginPassword.text.isNotEmpty()) {

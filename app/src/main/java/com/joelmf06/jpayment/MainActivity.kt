@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     }
      private fun setup () {
-         title = "Autenticacíón"
+         title = "Autenticación"
 
          binding.btnRegistro.setOnClickListener {
              if (binding.etEmailAddress.text.isNotEmpty() && binding.etPassword.text.isNotEmpty()) {
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                      binding.etPassword.text.toString()).addOnCompleteListener {
 
                          if (it.isSuccessful) {
-                             showLogin(it.result?.user?.email?: "")
+                             showLogin(it.result?.user?.email ?: "")
                          }else {
                              showAlert()
                          }
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
     private fun showAlert() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
-        builder.setMessage("Se ha producido un error autenticando al usuario")
+        builder.setMessage("Se ha producido un error registrando al usuario")
         builder.setPositiveButton("Aceptar", null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
