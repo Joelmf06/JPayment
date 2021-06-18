@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         //Setup
         setup ()
-        click_TvClickAqui ()
+        clickTvClickAqui ()
 
     }
      private fun setup () {
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun click_TvClickAqui () {
+    private fun clickTvClickAqui () {
         binding.tvClickAqui.setOnClickListener {
 
             val clickIntent = Intent (this, InicioSesion::class.java)

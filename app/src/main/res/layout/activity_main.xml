@@ -101,10 +101,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="80dp"
-        android:textSize="16dp"
-        android:textColor="#818181"
+        android:layout_marginTop="120dp"
         android:text="¿Ya estas registrado (a)?"
+        android:textColor="#818181"
+        android:textSize="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
 
@@ -113,11 +113,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="120dp"
         android:text="Click aqui"
-        android:textSize="20sp"
         android:textColor="#03A9F4"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
+
+    <Button
+        android:id="@+id/googleBotton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:text="GOOGLE"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
